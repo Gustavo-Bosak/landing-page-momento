@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Uncial+Antiqua&display=swap');
+
+*, a, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'GFS Neohellenic', sans-serif;
+    color: #000000;
+}
+
+body {
+    background: #FCF3E8;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 2.5rem;
+    background: #FCF3E8 url('../images/beam.png') bottom/12% repeat-x;
+    padding-bottom: 2.5rem;
+    position: fixed;
+    z-index: 1;
+    & span {
+        margin-top: 1rem;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+
+h1 {
+    font-family: 'Caesar Dressing', sans-serif;
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.logo {
+    height: 3rem;
+}
+
+span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Uncial Antiqua', system-ui, sans-serif;
+    font-size: 1.5rem;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    height: 88vh;
+}
+
+/*  */
+
+#firstFrame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background: #e6a675 url('../images/cloud_bg2.png') bottom/40% repeat-x;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    height: 100%;
+    z-index: 2;
+}
+
+.columnEdge {
+    height: 5rem;
+}
+
+.columnMiddle {
+    height: 100%;
+    background: url('../images/column_middle.png') right/contain repeat-y;
+}
+
+.mainFrame, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & article {
+        width: 45%;
+    }
+}
+
+button {
+    background: #FCF3E8 url('../images/brick_bg.png') center/cover;
+    padding: 1rem 2rem;
+    border: none;
+    margin-top: 2%;
+    box-shadow: 0 0 0.25rem #a89889;
+    font-size: 2rem;
+    font-style: italic;
+    color: #a89889;
+}
+
+header button {
+    padding: 0.4rem 0.8rem;
+    margin-top: 0.25rem;
+    font-size: 1.5rem;
+}
+
+section:not(:first-child),
+.cardFrame, .userCard div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.frameBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5rem;
+}
+
+.cardFrame {
+    width: 26%;
+    background: #FCF3E8 url('../images/brick_bg.png') left/cover;
+    padding-block: 2rem;
+    border: #DCCEC1 solid 0.25rem;
+    margin-block: 2%;
+    box-shadow: 0 0 1rem #a89889;
+    & img {
+        height: 15rem;
+        width: 15rem;
+        margin-bottom: 1rem;
+    }
+    & h2 {
+        font-size: 2rem;
+    }
+    & p {
+        margin-inline: 2rem;
+        text-align: center;
+    }
+    & span {
+        background: #FCF3E8 url('../images/brick_bg.png') center/contain;
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+        box-shadow: 0 0 0.25rem #a89889;
+        color: #a89889;
+    }
+}
+
+#thirdFrame, #sixthFrame {
+    flex-flow: row;
+    gap: 2rem;
+    & img {
+        height: 25rem;
+    }
+}
+
+#thirdFrame {
+    background: #d7f8f2 url('../images/olympus_bg.png') center/cover no-repeat;
+    & img {
+        height: 15rem;
+        padding: 5rem;
+    }
+}
+
+#thirdFrame article, #forthFrame article, #sixthFrame article {
+    width: 35%;
+}
+
+#forthFrame {
+    flex-flow: row;
+    gap: 2rem;
+}
+
+.userCard {
+    display: flex;
+    width: 34%;
+    background: #FCF3E8 url('../images/brick_bg.png') left/cover;
+    border: #DCCEC1 solid 0.25rem;
+    box-shadow: 0 0 1rem #a89889;
+    text-align: justify;
+    & div:not(span div) {
+        padding-right: 1rem;
+        & p {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+    }
+    & img:not(.symbol) {
+        height: 24rem;
+        width: 16rem;
+        margin: 1rem;
+    }
+    & span {
+        margin-top: 2rem;
+    }
+}
+
+.symbol {
+    height: 2rem;
+}
+
+.symbolEdge {
+    width: 1rem;
+    height: 2rem;
+    background: url('../images/laurel.png') center/contain no-repeat;
+}
+
+#fifthFrame {
+    background: #e6a675 url('../images/pot_bg.png') center/contain;
+    & img {
+        height: 8rem;
+        width: auto;
+    }
+}
+
+#seventhFrame {
+    background: #d7f8f2 url('../images/war_bg.png') center/cover;
+    & p {
+        font-size: 2rem;
+        font-style: italic;
+    }
+}
+
+/*  */
+
+footer {
+    flex-flow: column;
+    width: 100%;
+    margin-block: 2vh;
+    & p {
+        font-size: 1rem;
+    }
+}
+
+footer nav {
+    justify-content: space-between;
+    text-align: right;
+}
+
+footer div {
+    display: flex;
+    gap: 5rem;
+    & li {
+        margin-bottom: 0.5rem;
+    }
+}
+
+footer ul li:first-child:not(a li) {
+    font-family: 'Caesar Dressing', sans-serif;
+}
+
+.logoFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social {
+    padding-block: 4vh;
+    border-top: #000000 solid 2px;
+    margin-block: 2vh;
+    & img {
+        height: 1rem;
+    }
+    & a {
+        display: flex;
+        align-items: center;
+        background: #FCF3E8 url('../images/brick_bg.png') center/cover;
+        padding: 1rem 2rem;
+        border: #DCCEC1 solid 2px;
+        box-shadow: 0 0 0.25rem #a89889;
+        gap: 1rem;
+    }
+}
+
+.titleBreak {
+    width: 30%;
+    height: 0.25rem;
+    background: #000000;
+    margin-block: 0.5rem;
+}
+
+.pageBreak {
+    width: 100%;
+    height: 6vh;
+    background: #FCF3E8 url('../images/pattern.png') left/contain repeat-x;
+}
+
+/* Hoover */
+
+span:not(header span, footer span):hover, button:hover, .social a:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+footer a li:hover {
+    color: #a89889;
+    cursor: pointer;
+}
